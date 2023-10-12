@@ -1,3 +1,21 @@
+.transition {
+    animation: transition-page 3s;
+}
+
+@keyframes transition-page {
+    0% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
 
 
 @keyframes float {
@@ -9,7 +27,7 @@
     50% {
         box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
         transform: translatey(-10px);
-        
+
     }
 
     100% {
@@ -20,8 +38,8 @@
 
 
 #header-img {
-    width: 60%;
-    animation: float 8s infinite;
+    width: 70%;
+    animation: float 6s infinite;
 }
 
 .bg-perso {
