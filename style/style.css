@@ -1,46 +1,11 @@
-.transition {
-    animation: transition-page 3s;
-}
-
-@keyframes transition-page {
-    0% {
-        opacity: 1
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-
-}
-
-
-@keyframes float {
-    0% {
-        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-        transform: translatey(0px);
-    }
-
-    50% {
-        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
-        transform: translatey(-10px);
-
-    }
-
-    100% {
-        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-        transform: translatey(0px);
-    }
-}
-
+/* ===== HEADER ===== */
 
 #header-img {
     width: 70%;
     animation: float 6s infinite;
 }
+
+/* ===== MAIN SECTION ===== */
 
 .bg-perso {
     background: rgb(255, 255, 255);
@@ -53,11 +18,6 @@ hr {
     box-shadow: inset 0 12px 12px -12px #3B71CA;
     width: 90%;
     border-radius: 45px;
-}
-
-.background-footer {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, #ffffff 0%, rgb(81, 159, 211) 100%);
 }
 
 section {
@@ -109,24 +69,21 @@ section .air.air4 {
     bottom: 20px;
 }
 
-@keyframes wave {
-    0% {
-        background-position-x: 0px;
-    }
+/* ===== FOOTER ===== */
 
-    100% {
-        background-position-x: 1000px;
-    }
+.background-footer {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, #ffffff 0%, rgb(81, 159, 211) 100%);
 }
 
-@keyframes wave2 {
-    0% {
-        background-position-x: 0px;
-    }
+.footer-text {
+    font-size: 0.7em;
+}
 
-    100% {
-        background-position-x: -1000px;
-    }
+/* ===== PAGE TRANSITION ===== */
+
+.transition {
+    animation: transition-page 3s;
 }
 
 .transition-main {
@@ -154,4 +111,62 @@ html.is-animating.to-left .transition-main {
 
 html.is-leaving.to-left .transition-main {
     transform: translateX(-1em);
+}
+
+@keyframes transition-page {
+    0% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+/* ===== PIC ANIMATION ===== */
+
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(-10px);
+
+    }
+
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+}
+
+
+/* ===== WAVE ANIMATION ===== */
+
+@keyframes wave {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes wave2 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: -1000px;
+    }
 }
